@@ -1,0 +1,221 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.header{
+    min-height: 100vh;
+    width:100%;
+    background-image:repeating-linear-gradient(rgba(247, 139, 247, 0.896),rgba(6, 18, 185, 0.925)),url(Image/college.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 5%;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav img{
+    width: 100px;
+}
+
+.nav-links{
+    text-align: right;
+    flex: 1;
+}
+
+.nav-links ul li {
+    list-style-type: none;
+    display:inline-block;
+    padding: 12px 8px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color:rebeccapurple;
+    font-size: 20px;
+
+}
+
+.nav-links ul li:hover::after{
+    width:100%;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.text-box{
+    width: 90%;
+    color: green;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%);
+}
+
+.text-box h1{
+    font-size: 62px;
+    color:#f44336;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: violet;
+
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:aquamarine;
+    font-size: 16px;
+    padding:12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid gold;
+    background:plum;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+.course{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin:10px;
+
+}
+
+p{
+    font-size: 14px;
+    color: darkblue;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-col{
+    flex-basis: 32%;
+    background: burlywood;
+    border-radius: 7px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(206, 55, 140, 0.1);
+}
+
+.campus{
+    width:65%;
+    margin:auto;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.campus-col{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img{
+    width: 100%;
+    height: 100%;
+    display:block;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+.layer:hover{
+    background: rgba(221, 160, 221, 0.6);
+}
+
+.layer h3{
+    width:100%;
+    font-weight: 100;
+    color:aqua;
+    font-size: 14px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-25%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    top:50%;
+    opacity: 1;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+.icons .fa{
+    color: red;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fa-heart-o{
+    color:red;
+}
